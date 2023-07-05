@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int number1, number2, number3;
+    float timeForEatCake;
+
+    printf("*Значення вводяться через пробіл*\n\n");
+    
+    printf("Введіть три значення (час з'їдання пирога 3 гостями):\n");
+    scanf("%d %d %d", &number1, &number2, &number3);
+    
+    timeForEatCake = 1.0 / ((1.0 / number1) + (1.0 / number2) + (1.0 / number3));
+
+    printf("\nЧас, необхідний для з'їдання пирога: %.2f годин(и)\n", timeForEatCake);
+
+    return 0;
+}
